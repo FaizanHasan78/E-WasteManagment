@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>E-Cycle | Smart E-Waste Management Solutions</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo">🔌 E-Cycle</div>
+    <nav id="nav">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#services">E-Waste Services</a></li>
+        <li><a href="#process">Recycling Process</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="header-actions">
+      <select class="lang-select">
+        <option>EN</option>
+        <option>HI</option>
+        <option>TA</option>
+      </select>
+      <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-video">
+      <video autoplay muted loop playsinline>
+        <source src="wm.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </div>
+
+    <div class="hero-content">
+      <h1>Empowering E-Waste Management for a Greener Tomorrow</h1>
+      <p>Join India’s trusted platform managing over 1500 tons of electronic waste every month</p>
+      <div class="cta-container">
+        <a href="#contact" class="btn"><i class="fas fa-calendar-check"></i><span>Schedule E-Waste Pickup</span></a>
+        <a href="#process" class="btn btn-outline"><i class="fas fa-play-circle"></i><span>How It Works</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trust Badges -->
+  <section class="trust-badges">
+    <div class="badge-container">
+      <img src="recycle-certified.jpeg" alt="Certified E-Waste Recycler">
+      <img src="iso-certified.jpeg" alt="ISO 14001 Certified">
+      <div class="badge">
+        <i class="fas fa-award"></i>
+        <span>2025 National E-Waste Management Award</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="services fade-in-up" id="services">
+    <h2>Our E-Waste Management Services</h2>
+    <div class="cards">
+      <div class="card">
+        <div class="icon-circle"><i class="fas fa-laptop"></i></div>
+        <h3>IT Asset Disposal</h3>
+        <p>Secure and eco-friendly disposal of laptops, servers, and desktops.</p>
+        <a href="#" class="learn-more">Explore Process →</a>
+      </div>
+      <div class="card">
+        <div class="icon-circle"><i class="fas fa-mobile-alt"></i></div>
+        <h3>Mobile & Gadget Recycling</h3>
+        <p>Responsible collection and dismantling of used mobiles, tablets, and accessories.</p>
+        <a href="#" class="learn-more">Explore Process →</a>
+      </div>
+      <div class="card">
+        <div class="icon-circle"><i class="fas fa-tv"></i></div>
+        <h3>Consumer Electronics</h3>
+        <p>TVs, refrigerators, ACs, and other electronics processed with care.</p>
+        <a href="#" class="learn-more">Explore Process →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Process Timeline -->
+  <section class="process-timeline" id="process">
+    <h2>Our E-Waste Recycling Process</h2>
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-icon"><i class="fas fa-calendar-alt"></i></div>
+        <h4>1. Book Pickup</h4>
+        <p>Request pickup via our website or helpline.</p>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-icon"><i class="fas fa-boxes"></i></div>
+        <h4>2. E-Waste Collection</h4>
+        <p>We collect e-waste directly from your location securely.</p>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-icon"><i class="fas fa-truck"></i></div>
+        <h4>3. Safe Transport</h4>
+        <p>Electronics are transported to our certified processing units.</p>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-icon"><i class="fas fa-tools"></i></div>
+        <h4>4. Dismantling</h4>
+        <p>We dismantle and segregate e-waste components efficiently.</p>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-icon"><i class="fas fa-recycle"></i></div>
+        <h4>5. Recycling & Recovery</h4>
+        <p>Precious metals and reusable materials are recovered responsibly.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="testimonials" id="testimonials">
+    <h2>What Our Partners Say</h2>
+    <div class="testimonial-carousel">
+      <div class="testimonial-slide active">
+        <div class="client-photo" style="background-image: url('humn.jpeg');"></div>
+        <p>"E-Cycle helped us dispose outdated IT assets securely and sustainably."</p>
+        <div class="client-info">
+          <h5>Ravi Verma</h5>
+          <small>CTO, DigiNova Pvt. Ltd.</small>
+        </div>
+      </div>
+      <div class="testimonial-slide">
+        <div class="client-photo" style="background-image: url('humn.jpeg');"></div>
+        <p>"Professional service with clear documentation and compliance. Highly recommended!"</p>
+        <div class="client-info">
+          <h5>Preeti Sinha</h5>
+          <small>Operations Head, EcoServe India</small>
+        </div>
+      </div>
+      <div class="testimonial-slide">
+        <div class="client-photo" style="background-image: url('humn.jpeg');"></div>
+        <p>"Their team ensured complete data destruction before recycling our electronics."</p>
+        <div class="client-info">
+          <h5>Arjun Malhotra</h5>
+          <small>Manager, GreenIT Solutions</small>
+        </div>
+      </div>
+      <button class="testimonial-prev">&#10094;</button>
+      <button class="testimonial-next">&#10095;</button>
+    </div>
+  </section>
+
+  <!-- Map Coverage -->
+  <section class="coverage-map fade-in-up">
+    <h2>Serving Across India</h2>
+    <div class="map-container">
+      <img src="map.PNG" alt="E-Waste Coverage Map" class="base-map" />
+      <a href="#"><div class="city-marker" style="top: 60%; left: 35%">Hyderabad</div></a>
+      <a href="#"><div class="city-marker" style="top: 74%; left: 26%">Bangalore</div></a>
+      <a href="#"><div class="city-marker" style="top: 27%; left: 29%">Delhi</div></a>
+      <a href="#"><div class="city-marker" style="top: 34%; left: 22%">Rajasthan</div></a>
+      <a href="#"><div class="city-marker" style="top: 53%; left: 22%">Mumbai</div></a>
+      <a href="#"><div class="city-marker" style="top: 37%; left: 56%">Patna</div></a>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <div class="contact-container">
+      <div class="contact-info">
+        <h2>Let’s Dispose E-Waste Responsibly</h2>
+        <div class="info-item">
+          <i class="fas fa-phone"></i>
+          <div>
+            <h4>24/7 Support</h4>
+            <p>+91 98765 43210</p>
+          </div>
+        </div>
+      </div>
+      <form class="contact-form">
+        <div class="form-group">
+          <input type="text" placeholder="Name" required />
+          <input type="email" placeholder="Email" required />
+        </div>
+        <div class="form-group">
+          <select required>
+            <option value="">Select E-Waste Type</option>
+            <option>Mobile Devices</option>
+            <option>Laptops / PCs</option>
+            <option>Large Appliances</option>
+          </select>
+          <input type="tel" placeholder="Phone Number" />
+        </div>
+        <textarea placeholder="Message (Optional)"></textarea>
+        <button type="submit" class="btn"><i class="fas fa-paper-plane"></i> Submit Request</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h5>E-Cycle</h5>
+        <p>Leading E-Waste Management Since 2020</p>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h5>Explore</h5>
+        <ul>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">News</a></li>
+          <li><a href="#">Corporate Program</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Compliance</h5>
+        <ul>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms & Conditions</a></li>
+          <li><a href="#">E-Waste Guidelines</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 E-Cycle. Recycling for a Better India 🇮🇳</p>
+    </div>
+  </footer>
+
+  <button id="backToTop" class="back-to-top"><i class="fas fa-arrow-up"></i></button>
+
+  <script src="script.js"></script>
+</body>
+</html>
